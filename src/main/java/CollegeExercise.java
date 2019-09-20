@@ -19,9 +19,20 @@ public class CollegeExercise
         s1.setMarksSub3(60);
         s1.setMarksSub4(35);
         s1.setMarksSub5(80);
-
+        s1.calculateTotal();
+        s1.calculatePercentage();
         System.out.println(s1.getfullName());
+        System.out.println(s1.getMarksSub1());
+        System.out.println(s1.getMarksSub2());
+        System.out.println(s1.getMarksSub3());
+        System.out.println(s1.getMarksSub4());
+        System.out.println(s1.getMarksSub5());
+        System.out.println(s1.getTotal());
+        System.out.println(s1.getPercentage());
+
+
        s1.generateResult();
+        System.out.println(s1.calculateGrade());
 
 
     }

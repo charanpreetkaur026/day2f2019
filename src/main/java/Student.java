@@ -163,6 +163,36 @@ public class Student
             return false;
         }
     }
+    public String calculateGrade()
+    {
+        percentage=getPercentage();
+        String result;
+     if(percentage<=49)
+     {
+         result="F";
+     }
+     else if (percentage<=59)
+     {
+        result="D";
+     }
+     else if( percentage<=69)
+        {
+            result="C";
+        }
+     else if(percentage<=79)
+        {
+            result="B";
+        }
+     else if (percentage<=85)
+        {
+            result="A";
+        }
+     else
+     {
+         result="A+";
+     }
+     return result;
+    }
     public String getfullName()
 
     {
